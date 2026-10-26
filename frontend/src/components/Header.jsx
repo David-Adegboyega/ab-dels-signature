@@ -1,5 +1,7 @@
+import './Header.css';
+
 function Header() {
-    return <header>AB-Dels Signature</header>
+    return <header className="site-header">AB-Dels Signature</header>
 }
 
 export default Header;

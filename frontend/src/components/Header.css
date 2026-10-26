@@ -1,0 +1,8 @@
+.site-header {
+  /* background: your black variable */
+  /* text colour: your gold variable */
+  /* padding: 16px at top and bottom, 24px at left and right */
+    background: var(--color-black);
+    color: var(--color-gold);
+    padding: 16px 24px;
+}
