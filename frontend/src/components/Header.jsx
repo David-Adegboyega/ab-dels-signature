@@ -1,12 +1,23 @@
+import { useState } from 'react';
 import './Header.css';
 
 function Header() {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
          <header className="site-header">
         <div className="brand-name">
           AB-Dels Signature
       </div>
-        <nav>
+        <nav className={`navigation ${isOpen ? 'open' : ''}`}>
+            <button 
+            className="menu-button"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-expanded={isOpen}
+            aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+         >
+            {isOpen ? '✕' : '☰'}
+        </button>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>

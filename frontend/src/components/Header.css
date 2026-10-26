@@ -29,3 +29,26 @@
     font-weight: 600;
     color: var(--color-gold);
 }
+
+.menu-button {
+    display: none;
+    border: 2px solid var(--color-gold);
+    background: transparent;
+    color: var(--color-gold);
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .site-header ul {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+    .site-header nav.open ul { 
+        display: flex;
+        flex-direction: column;
+    }
+     
+}
