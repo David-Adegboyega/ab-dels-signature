@@ -19,12 +19,12 @@ function Header() {
             {isOpen ? '✕' : '☰'}
         </button>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">How to order</a></li>
-                <li><a href="#">Request a quote</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/how-to-order">How to order</a></li>
+                <li><a href="/request-a-quote">Request a quote</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
     </header>
