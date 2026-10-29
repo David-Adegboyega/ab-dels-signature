@@ -1,14 +1,14 @@
 import './App.css';
 import Header from './components/Header';
-import ProductCatalogue from './components/ProductCatalogue';
 import Footer from './components/Footer';
+import Home from './pages/Home';
 
 function App() {
   return (
     <>
       <Header />
       <main>
-        <ProductCatalogue />
+        <Home />
       </main>
       <Footer />
     </>
