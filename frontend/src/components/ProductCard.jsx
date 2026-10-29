@@ -4,7 +4,7 @@ function ProductCard({ name, price }) {
   return (
     <article className="product-card">
       <h3>{name}</h3>
-      <p>{price}</p>
+      <p>₦{price.toLocaleString('en-NG')}</p>
     </article>
   );
 }

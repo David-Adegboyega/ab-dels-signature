@@ -1,0 +1,13 @@
+export const products = [
+  { id: 1, name: 'T-shirt', category: 'Clothing', price: 13000 },
+  { id: 2, name: 'Hoodie', category: 'Clothing', price: 20000 },
+  { id: 3, name: 'Baseball cap', category: 'Caps', price: 8000 },
+  { id: 4, name: 'Corporate cap', category: 'Caps', price: 8000 },
+  { id: 5, name: 'Branded notebook', category: 'Books', price: 8000 },
+  { id: 6, name: 'Journal', category: 'Books', price: 7000 },
+  { id: 7, name: 'Exercise book', category: 'Books', price: 5000 },
+  { id: 8, name: 'Mug', category: 'Souvenirs', price: 13000 },
+  { id: 9, name: 'Keyholder', category: 'Souvenirs', price: 5000 },
+  { id: 10, name: 'Branded pen', category: 'Souvenirs', price: 5000 },
+  { id: 11, name: 'Gift bag', category: 'Souvenirs', price: 6000 },
+];

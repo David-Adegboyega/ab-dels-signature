@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import ProductCard from './components/ProductCard';
 import Footer from './components/Footer';
+import { products } from './data/products';
 
 function App() {
   return (
@@ -9,9 +10,13 @@ function App() {
       <Header />
       <main>
         <section className="product-grid">
-          <ProductCard name="T-shirt" price="₦13,000" />
-          <ProductCard name="Hoodie" price="₦20,000" />
-          <ProductCard name="Notebook" price="₦8,000" />
+          {products.map((product) => (
+            <ProductCard
+              key={product.id}
+              name={product.name}
+              price={product.price}
+            />
+          ))}
         </section>
       </main>
       <Footer />
