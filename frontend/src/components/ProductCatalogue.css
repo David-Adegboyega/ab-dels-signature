@@ -1,0 +1,29 @@
+.catalogue .filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.catalogue .filter-button {
+  min-height: 44px;
+  padding: 8px 20px;
+  border: 1px solid var(--color-gold);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--color-black);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.catalogue .filter-button:hover,
+.catalogue .filter-button.active {
+  background: var(--color-gold);
+  color: var(--color-black);
+}
+
+.catalogue .filter-button:focus-visible {
+  outline: 2px solid var(--color-black);
+  outline-offset: 2px;
+}
