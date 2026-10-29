@@ -5,6 +5,7 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import ProductCard from './components/ProductCard'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +25,9 @@ function App() {
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
         </div>
+        <ProductCard name="T-shirt" price="₦13,000" />
+        <ProductCard name="Hoodie" price="₦20,000" />
+        <ProductCard name="Notebook" price="₦8,000" />
         <Footer />
         <button
           type="button"
