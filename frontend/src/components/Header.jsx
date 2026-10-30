@@ -24,8 +24,8 @@ function Header() {
                 <li><Link to="/shop">Shop</Link></li>
                 <li><Link to="/how-to-order">How to order</Link></li>
                 <li><a href="/request-a-quote">Request a quote</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
             </ul>
         </nav>
     </header>

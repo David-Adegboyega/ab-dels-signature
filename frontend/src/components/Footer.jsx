@@ -1,6 +1,7 @@
 
 import './Footer.css';
 import { Link } from 'react-router';
+import siteInfo from '../data/siteInfo';
 
 function Footer() {
   return (
@@ -15,15 +16,15 @@ function Footer() {
         aria-label="Footer navigation"
       >
         <Link to="/how-to-order">How to order</Link>
-        <a href="/delivery">Delivery</a>
-        <a href="/policies">Policies</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
+        <Link to="/delivery">Delivery</Link>
+        <Link to="/policies">Policies</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
       </nav>
 
       <div className="site-footer__socials">
         <a
-          href="https://www.instagram.com/"
+          href={siteInfo.instagramUrl}
           target="_blank"
           rel="noreferrer"
         >
@@ -31,7 +32,7 @@ function Footer() {
         </a>
 
         <a
-          href="https://www.tiktok.com/"
+          href={siteInfo.tiktokUrl}
           target="_blank"
           rel="noreferrer"
         >

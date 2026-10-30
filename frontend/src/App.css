@@ -9,3 +9,11 @@
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 24px;
 }
+
+.text-page {
+  max-width: 720px;
+}
+
+.text-page h2 {
+  margin-top: 32px;
+}
