@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import './Home.css';
 
 function Home() {
@@ -9,7 +10,7 @@ function Home() {
         represents your name.
       </p>
       <div className="hero__actions">
-        <a href="#" className="button button-primary">Shop</a>
+        <Link to="/shop" className="button button-primary">Shop</Link>
         <a href="#" className="button button-secondary">Request a quote</a>
       </div>
     </section>
