@@ -1,0 +1,28 @@
+.quote-form .field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 420px;
+  margin-bottom: 20px;
+}
+
+.quote-form label {
+  font-weight: 500;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--color-black);
+  border-radius: 4px;
+  background: var(--color-ivory);
+  color: var(--color-black);
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+.quote-form .note {
+  max-width: 420px;
+}

@@ -11,7 +11,7 @@ function Home() {
       </p>
       <div className="hero__actions">
         <Link to="/shop" className="button button-primary">Shop</Link>
-        <a href="#" className="button button-secondary">Request a quote</a>
+        <Link to="/quote" className="button button-secondary">Request a quote</Link>
       </div>
     </section>
   );
