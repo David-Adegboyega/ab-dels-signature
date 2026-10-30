@@ -1,0 +1,11 @@
+.how-to-order {
+  max-width: 720px;
+}
+
+.how-to-order ol {
+  padding-left: 24px;
+}
+
+.how-to-order li {
+  margin-bottom: 12px;
+}

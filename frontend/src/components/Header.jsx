@@ -22,7 +22,7 @@ function Header() {
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/shop">Shop</Link></li>
-                <li><a href="/how-to-order">How to order</a></li>
+                <li><Link to="/how-to-order">How to order</Link></li>
                 <li><a href="/request-a-quote">Request a quote</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/contact">Contact</a></li>
