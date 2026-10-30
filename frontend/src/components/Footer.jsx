@@ -1,7 +1,7 @@
 
 import './Footer.css';
 import { Link } from 'react-router';
-import siteInfo from '../data/siteInfo';
+import { siteInfo } from '../data/siteInfo';
 
 function Footer() {
   return (
@@ -23,18 +23,12 @@ function Footer() {
       </nav>
 
       <div className="site-footer__socials">
-        <a
-          href={siteInfo.instagramUrl}
-          target="_blank"
-          rel="noreferrer"
+        <a href={siteInfo.instagramUrl} target="_blank" rel="noreferrer"
         >
           Instagram
         </a>
 
-        <a
-          href={siteInfo.tiktokUrl}
-          target="_blank"
-          rel="noreferrer"
+        <a href={siteInfo.tiktokUrl} target="_blank" rel="noreferrer"
         >
           TikTok
         </a>
