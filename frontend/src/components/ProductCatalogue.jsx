@@ -2,11 +2,16 @@ import { useState } from 'react';
 import './ProductCatalogue.css';
 import ProductCard from './ProductCard';
 import { products } from '../data/products';
+import { useSearchParams } from 'react-router';
 
 const categories = ['All', 'Clothing', 'Caps', 'Books', 'Souvenirs'];
 
 function ProductCatalogue() {
-  const [selected, setSelected] = useState('All');
+  const [searchParams] = useSearchParams();
+const requested = searchParams.get('category');
+const [selected, setSelected] = useState(
+  categories.includes(requested) ? requested : 'All'
+);
 
   const visibleProducts =
     selected === 'All'

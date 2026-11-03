@@ -25,3 +25,68 @@
 .hero .button-secondary {
   color: var(--color-ivory);
 }
+
+.category-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.category-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 96px;
+  border: 1px solid var(--color-gold);
+  border-radius: 4px;
+  color: var(--color-black);
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.category-tile:hover {
+  background: var(--color-black);
+  color: var(--color-gold);
+}
+
+.how-it-works {
+  background: var(--color-black);
+  color: var(--color-ivory);
+}
+
+.how-it-works h2 {
+  color: var(--color-gold);
+}
+
+.steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  counter-reset: step;
+}
+
+.steps li {
+  counter-increment: step;
+}
+
+.steps li::before {
+  content: counter(step);
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-gold);
+}
+
+.steps h3 {
+  margin: 4px 0 8px;
+  color: var(--color-ivory);
+}
+
+.steps p {
+  margin: 0;
+}
