@@ -1,0 +1,13 @@
+[
+  {"model": "products.product", "pk": 1, "fields": {"name": "T-shirt", "category": "Clothing", "price": 13000, "featured": true, "sizes": ["S", "M", "L", "XL", "XXL"], "colours": ["Black", "White", "Navy blue"]}},
+  {"model": "products.product", "pk": 2, "fields": {"name": "Hoodie", "category": "Clothing", "price": 20000, "featured": true, "sizes": ["M", "L", "XL", "XXL"], "colours": ["Black", "White", "Grey"]}},
+  {"model": "products.product", "pk": 3, "fields": {"name": "Baseball cap", "category": "Caps", "price": 8000, "featured": false, "sizes": [], "colours": ["Black", "White", "Navy blue"]}},
+  {"model": "products.product", "pk": 4, "fields": {"name": "Corporate cap", "category": "Caps", "price": 8000, "featured": false, "sizes": [], "colours": ["Black", "White", "Navy blue"]}},
+  {"model": "products.product", "pk": 5, "fields": {"name": "Branded notebook", "category": "Books", "price": 8000, "featured": true, "sizes": [], "colours": []}},
+  {"model": "products.product", "pk": 6, "fields": {"name": "Journal", "category": "Books", "price": 7000, "featured": false, "sizes": [], "colours": []}},
+  {"model": "products.product", "pk": 7, "fields": {"name": "Exercise book", "category": "Books", "price": 5000, "featured": false, "sizes": [], "colours": []}},
+  {"model": "products.product", "pk": 8, "fields": {"name": "Mug", "category": "Souvenirs", "price": 13000, "featured": true, "sizes": [], "colours": []}},
+  {"model": "products.product", "pk": 9, "fields": {"name": "Keyholder", "category": "Souvenirs", "price": 5000, "featured": false, "sizes": [], "colours": []}},
+  {"model": "products.product", "pk": 10, "fields": {"name": "Branded pen", "category": "Souvenirs", "price": 5000, "featured": false, "sizes": [], "colours": []}},
+  {"model": "products.product", "pk": 11, "fields": {"name": "Gift bag", "category": "Souvenirs", "price": 6000, "featured": false, "sizes": [], "colours": []}}
+]
