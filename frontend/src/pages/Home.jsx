@@ -1,7 +1,7 @@
 import { Link } from 'react-router';
 import './Home.css';
 import ProductCard from '../components/ProductCard';
-import { products } from '../data/products';
+import { useProducts } from '../hooks/useProducts';
 
 const categories = ['Clothing', 'Caps', 'Books', 'Souvenirs'];
 
@@ -13,6 +13,7 @@ const steps = [
 ];
 
 function Home() {
+  const { products } = useProducts();
   const featured = products.filter((product) => product.featured);
 
   return (

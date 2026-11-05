@@ -1,16 +1,20 @@
 import { useState } from 'react';
 import { Link, useParams } from 'react-router';
 import './ProductDetail.css';
-import { products } from '../data/products';
+import { useProducts } from '../hooks/useProducts';
 import { siteInfo } from '../data/siteInfo';
 
 function ProductDetail() {
   const { id } = useParams();
-  const product = products.find((item) => item.id === Number(id));
-
+  const { products, loading, error } = useProducts();
   const [size, setSize] = useState('');
   const [colour, setColour] = useState('');
   const [wording, setWording] = useState('');
+
+  if (loading) return <p>Loading products...</p>;
+  if (error) return <p>Sorry, we couldn't load the products. Please try again.</p>;
+
+    const product = products.find((item) => item.id === Number(id));
 
   if (!product) {
     return (
