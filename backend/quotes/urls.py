@@ -1,8 +1,7 @@
-from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
+
+from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/products/', include('products.urls')),
-    path('api/quotes/', include('quotes.urls')),
+    path('', views.create_quote),
 ]
