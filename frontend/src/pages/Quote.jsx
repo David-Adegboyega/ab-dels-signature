@@ -37,6 +37,14 @@ function Quote() {
     .join('\n');
 
   const whatsappLink = `https://wa.me/${siteInfo.whatsappNumber}?text=${encodeURIComponent(message)}`;
+  const saveQuote = () => {
+  fetch('/api/quotes/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(form),
+    keepalive: true,
+  }).catch((error) => console.error('Could not save quote request', error));
+};
 
   return (
     <div className="container text-page quote-form">
@@ -91,7 +99,7 @@ function Quote() {
       </p>
 
       {ready ? (
-        <a href={whatsappLink} target="_blank" rel="noreferrer" className="button button-primary">
+        <a href={whatsappLink} onClick={saveQuote} target="_blank" rel="noreferrer" className="button button-primary">
           Send request on WhatsApp
         </a>
       ) : (
