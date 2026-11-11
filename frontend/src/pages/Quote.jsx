@@ -38,7 +38,7 @@ function Quote() {
 
   const whatsappLink = `https://wa.me/${siteInfo.whatsappNumber}?text=${encodeURIComponent(message)}`;
   const saveQuote = () => {
-  fetch('/api/quotes/', {
+  fetch(`${API_URL}/api/quotes/`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(form),
