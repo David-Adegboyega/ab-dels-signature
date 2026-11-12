@@ -16,3 +16,4 @@ class ProductListTests(TestCase):
         self.assertEqual(len(data), 1)
         self.assertEqual(data[0]['name'], 'Mug')
         self.assertEqual(data[0]['price'], 13000)
+        

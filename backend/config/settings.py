@@ -45,9 +45,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'products',
     'quotes',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware','whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -151,3 +153,10 @@ if not DEBUG:
     SECURE_SSL_REDIRECT = True
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
+
+CORS_ALLOWED_ORIGINS = [
+    origin
+    for origin in os.environ.get('CORS_ALLOWED_ORIGINS', '').split(',')
+    if origin
+]
+CORS_URLS_REGEX = r'^/api/.*$'
